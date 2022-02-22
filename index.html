@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="https://media.istockphoto.com/vectors/camera-icon-vector-vector-id1284097693?k=20&m=1284097693&s=170667a&w=0&h=anIls59UWeJCYvs6Hjea1WXnlBlqKqo3KvqrNx05bfM=">
+  <style>
+    body {
+		background: #222;
+		color: white;
+    overflow-x: hidden;
+	}
+  h1{
+    font-family: cursive;
+  }
+    .thumbnails img {
+    height: 80px;
+    border: 4px solid #555;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+    }
+    
+    .thumbnails img:hover {
+    border: 4px solid #00ccff;
+    }
+    
+    .preview img {
+    border: 4px solid #444;
+    padding: 1px;
+    width: 730px;
+    height: 520px;
+    }
+
+    @media screen and (max-width:769px) {
+          .preview img {
+            border: 4px solid #444;
+            padding: 1px;
+            width: 370px;
+            height: 375px;
+          }
+    }
+	
+  </style>
+</head>
+<body>
+
+  <h1 class="display-4 mb-2 text-center p-4">Image Gallery</h1>
+
+  <div class="thumbnails" align="center">
+		<img onclick="preview.src=img1.src" name="img1" src="https://source.unsplash.com/500x500/?food" />
+		<img onclick="preview.src=img2.src" name="img2" src="https://source.unsplash.com/500x500/?book" />
+		<img onclick="preview.src=img3.src" name="img3" src="https://source.unsplash.com/500x500/?girl" />
+		<img onclick="preview.src=img4.src" name="img4" src="https://source.unsplash.com/500x500/?nature" />
+		<img onclick="preview.src=img5.src" name="img5" src="https://source.unsplash.com/500x500/?love" />
+		<img onclick="preview.src=img6.src" name="img6" src="https://source.unsplash.com/500x500/?computer" />
+		<img onclick="preview.src=img7.src" name="img7" src="https://source.unsplash.com/500x500/?river" />
+		<img onclick="preview.src=img8.src" name="img8" src="https://source.unsplash.com/500x500/?technology" />
+	</div>
+
+  <div class="preview" align="center">
+		<img name="preview" src="https://source.unsplash.com/500x500/?food" />
+	</div>
+ 
+</body>
+</html>
